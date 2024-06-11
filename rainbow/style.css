@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background: conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
+    border-radius: 50%;
+    animation: rotate 0.3s ease-in-out infinite;
+}
+@keyframes rotate {
+    100%{
+        rotate: 360deg;
+    }
+}
